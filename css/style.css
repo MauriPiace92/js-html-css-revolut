@@ -76,6 +76,13 @@ button{
 	text-shadow:0px 1px 0px #bb0070;
 }
 
+button:hover{
+    background-color: white;
+    border:1px solid #bb0070;
+    color: #eb008e;
+
+}
+
 
 
 /* DROPDOWN */

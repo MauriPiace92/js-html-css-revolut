@@ -1,11 +1,12 @@
 $(document).ready(function(){
+    // allo scorrere del mouse su dropdown deve apparire e scomparire
     var scorri = $('.whithdropdown');
     scorri.mouseenter(function(){
 
         var drop = $('.dropdown');
         drop.removeClass('hidden');
         
-
+        // rimuovo all'uscire con il mouse
         scorri.mouseleave(function(){
 
             drop.addClass('hidden');
@@ -14,14 +15,21 @@ $(document).ready(function(){
 
     });
 
+    // Cambiamento Chevron vicino a IT passandoci sopra con il mouse 
     var chevronChange = $('.chevron');
-    chevronChange.click(function(){
+    chevronChange.mouseenter(function(){
 
-        var invert=$ ('i')
-        invert.html('<i class="fas fa-chevron-up"></i>');
-        console.log(invert);
+        // da su a giù:
+        var invert=$ ('i');
+        invert.removeClass('fa-chevron-up');
+        invert.html('<i class="fas fa-chevron-down"></i>');
 
+        // da giù a su:
+        chevronChange.mouseleave(function(){
+            invert.removeClass('fa-chevron-down');
+            invert.html('<i class="fas fa-chevron-up"></i>');
 
+        });
     });
 
 
