@@ -1,17 +1,19 @@
 $(document).ready(function(){
     // allo scorrere del mouse su dropdown deve apparire e scomparire
-    var scorri = $('.whithdropdown');
-    scorri.mouseenter(function(){
+    var scorriIn = $('.whithdropdown');
+    scorriIn.mouseenter(function(){
 
         var drop = $('.dropdown');
         drop.removeClass('hidden');
-        
-        // rimuovo all'uscire con il mouse
-        scorri.mouseleave(function(){
 
-            drop.addClass('hidden');
-    
-        });
+    });
+
+     // rimuovo all'uscire con il mouse
+     var scorriOut = $('.whithdropdown');
+     scorriOut.mouseleave(function(){
+
+        var drop = $('.dropdown');
+        drop.addClass('hidden');
 
     });
 
