@@ -23,13 +23,15 @@ $(document).ready(function(){
         var invert=$ ('i');
         invert.removeClass('fa-chevron-up');
         invert.html('<i class="fas fa-chevron-down"></i>');
+    });
 
-        // da giù a su:
-        chevronChange.mouseleave(function(){
-            invert.removeClass('fa-chevron-down');
-            invert.html('<i class="fas fa-chevron-up"></i>');
+     // da giù a su:
+     var chevronChangeUp =$('.chevron')
+     chevronChangeUp.mouseleave(function(){
+        var invertUp =$ ('i');
+        // invertUp.removeClass('fa-chevron-down');
+        invertUp.html('<i class="fas fa-chevron-up"></i>');
 
-        });
     });
 
 
