@@ -37,19 +37,18 @@ $(document).ready(function(){
     });
 
 
+    // 
+    // BONUS:___________________________
+    // 
+    // AL clicpk su hamburger deve apparire il burger menu
 
-
+    var burgerMenu = $('.hamburger');
+    burgerMenu.click(function(){
     
 
-
-
-
-
-
-
-
-    
-
-
+        var classBurger = $('.burger-menu');
+        console.log(classBurger);
+        classBurger.toggle('hidden');
+    });
 
 });
