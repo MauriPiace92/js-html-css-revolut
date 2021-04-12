@@ -98,8 +98,7 @@ button:hover{
     left: -85px;
     border-radius: 10px;
     box-shadow: 2px 5px 11px grey;
-    width: 350px;
-    margin-top: 5px;
+    white-space: nowrap;
     padding: 10px 20px;
 
 }
